@@ -5,5 +5,5 @@
 */
 window.JUST_SAY_SUPABASE_CONFIG = {
   url: "https://okvehzycjehxbothkqwk.supabase.co",
-  publishableKey: "PASTE_YOUR_SB_PUBLISHABLE_KEY_HERE"
+  publishableKey: "sb_publishable_I1YneeU4Cxnm1lar-nJmhQ_G-4ygDH2"
 };
