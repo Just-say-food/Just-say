@@ -71,3 +71,11 @@ This update initializes the Supabase JavaScript client and adds a setup/status n
 - In that case it explains that the site must be hosted first instead of silently creating a QR code containing a laptop-only file URL.
 - After deploying the full folder to a public HTTPS website, open the hosted `admin.html` and generate the QR codes again. Verify the public hotel link from a different phone before printing.
 - This does not publish the website or create a domain automatically. The QR code will work for customers only after hosting is configured.
+
+
+## Hotel and food photo gallery prototype
+The admin form now includes hotel-gallery and room-gallery file selectors, and menu rows include a food-photo selector. Public hotel pages display saved hotel/room gallery images and food photos; tap a gallery image to zoom. This is a front-end prototype only: image data is stored locally in the browser demo record, not uploaded to Supabase Storage, and will not automatically appear on other devices. Before public launch, implement Supabase Storage uploads, shared hotel/room/menu records, and secure RLS policies. Do not treat booking requests as confirmed inventory reservations.
+
+
+## Version 5 professional upgrade (prototype)
+See `FEATURE_STATUS_V5.txt` and `PRODUCTION_ROADMAP.md`. New pages: `customer-login.html`, `hotel-register.html`, and `hotel-records.html`. A new `professional-features.js` adds local-demo admin partner approvals/payment preference fields, city selector, room/guest records, CSV export, and printable receipt. These are UI/demo workflows only; they do not replace real Supabase Auth, shared database/RLS, private Storage, payment verification, or automatic email/WhatsApp delivery.

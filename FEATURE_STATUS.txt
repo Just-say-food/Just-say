@@ -25,3 +25,7 @@ Requires backend/provider integration for production:
 [ ] Payment-provider verification/webhooks
 [ ] Credits wallet/ledger and automatic credit updates
 [ ] Photo upload/storage and audit logs
+
+[✓ prototype UI added] Admin can select hotel gallery and room gallery photos; public hotel pages render uploaded gallery images and allow tap-to-zoom.
+[✓ prototype UI added] Menu rows include food photo file selection and public menu cards render food photos.
+[!] Prototype limitation: images are stored as data URLs in this browser's localStorage-backed hotel record. Large photos may exceed browser storage, and this does NOT sync to customers on other devices. Production deployment must use Supabase Storage + shared database tables and access policies before relying on these photos or bookings.
